@@ -1,2 +1,9 @@
 [Desktop Entry]
 Icon=repository
+
+[Dolphin]
+Timestamp=2018,5,7,14,32,33
+Version=4
+
+[Settings]
+HiddenFilesShown=true
