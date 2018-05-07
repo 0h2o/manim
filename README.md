@@ -1,6 +1,6 @@
 # Precace
 ## Background
-Stupid `0h2o` worked for days, finally he found a simple way to support Chinese characters in both **TextMobject** and **TexMobject** string.
+Stupid 0h2o worked for days, finally he found a simple way to support Chinese characters in both **TextMobject** and **TexMobject** string.
 ## Install guide
 1.Prepare a PC/VM running on a linux system(my case kUbuntu).
 
@@ -16,7 +16,7 @@ pip uninstall aggdraw
 ```
 sudo apt-get -y install texlive-full 
 ```
-You can also skip this procedure, but later on you will come across numerous mistakes caused by lacking dependencies, you will have to find the exact package needed and install them one by one :(
+You can also skip this procedure, but later on you will come across numerous mistakes caused by lacking dependencies, you will have to find the exact packages needed for your project and install them one by one :(
 
 4.Clone this repository, cd ./ and install python dependencies:
 ```
