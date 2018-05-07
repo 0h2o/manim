@@ -3,6 +3,10 @@
 Movie_out/
 example_scenes/
 0h2o_workdir/
+*.kate-swp
+
+
+
 *.pyc
 .DS_Store
 homeless.py
