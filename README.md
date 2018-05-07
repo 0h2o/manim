@@ -27,4 +27,4 @@ pip install -r requirements.txt
 python extract_scene.py example_scenes.py SquareToCircle -pl
 ```
 
-### For further details, see the original repo from [**3b1b**](https://github.com/3b1b/manim).
+**For further details, please refer to the original repo from [3b1b](https://github.com/3b1b/manim).**
