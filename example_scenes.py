@@ -14,9 +14,9 @@ from big_ol_pile_of_manim_imports import *
 
 class SquareToCircle(Scene):
     def construct(self):
-        cnss = TextMobject("UESTC").scale(2)
+        cnss = TextMobject("Cohensive Network Security Studio").scale(2)
         self.play(Write(cnss))
-        cnss_chn = TextMobject("电子科技大学").scale(2)
+        cnss_chn = TextMobject("凝聚网络安全工作室")
         self.play(Transform(cnss, cnss_chn))
         self.play(FadeOut(cnss))
 
