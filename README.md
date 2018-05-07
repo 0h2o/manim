@@ -1,4 +1,3 @@
-# Precace
 ## Background
 Stupid 0h2o worked for days, finally he found a simple way to support Chinese characters in both **TextMobject** and **TexMobject** string.
 ## Install guide
@@ -28,4 +27,4 @@ pip install -r requirements.txt
 python extract_scene.py example_scenes.py SquareToCircle -pl
 ```
 
-## For further details, see the original repo from [**3b1b**](https://github.com/3b1b/manim).
+### For further details, see the original repo from [**3b1b**](https://github.com/3b1b/manim).
