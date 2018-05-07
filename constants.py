@@ -3,7 +3,14 @@ import numpy as np
 
 # Things anyone wishing to use this repository for their
 # own use will want to change
+<<<<<<< HEAD
 MEDIA_DIR = "./Movie_out"
+=======
+MEDIA_DIR = os.path.join(
+    os.path.expanduser('~'),
+    "Dropbox (3Blue1Brown)/3Blue1Brown Team Folder"
+)
+>>>>>>> 07514c5ef3ee8a6b30028a7cce011c7881b355d5
 #
 
 

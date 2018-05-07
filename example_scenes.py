@@ -1,5 +1,8 @@
 #!/usr/bin/env python
+<<<<<<< HEAD
 #coding=utf-8
+=======
+>>>>>>> 07514c5ef3ee8a6b30028a7cce011c7881b355d5
 
 from big_ol_pile_of_manim_imports import *
 
@@ -14,11 +17,23 @@ from big_ol_pile_of_manim_imports import *
 
 class SquareToCircle(Scene):
     def construct(self):
+<<<<<<< HEAD
         cnss = TextMobject("UESTC").scale(2)
         self.play(Write(cnss))
         cnss_chn = TextMobject("电子科技大学").scale(2)
         self.play(Transform(cnss, cnss_chn))
         self.play(FadeOut(cnss))
+=======
+        circle = Circle()
+        square = Square()
+        square.flip(RIGHT)
+        square.rotate(-3 * TAU / 8)
+
+        self.play(ShowCreation(square))
+        self.play(Transform(square, circle))
+        self.play(FadeOut(square))
+
+>>>>>>> 07514c5ef3ee8a6b30028a7cce011c7881b355d5
 
 class WarpSquare(Scene):
     def construct(self):

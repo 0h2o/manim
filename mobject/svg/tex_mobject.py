@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 #coding=utf-8
+=======
+>>>>>>> 07514c5ef3ee8a6b30028a7cce011c7881b355d5
 from constants import *
 
 from svg_mobject import SVGMobject
