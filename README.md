@@ -8,6 +8,9 @@ Stupid 0h2o worked for days, finally he found a simple way to support Chinese ch
 sudo apt-get install ffmpeg
 sudo apt-get install latex
 sudo apt-get install sox
+```
+Uninstall this in advance:
+```
 pip uninstall aggdraw
 ```
 
