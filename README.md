@@ -1,3 +1,6 @@
+# Precace from 0h2o
+Stupid 0h2o worked for days, finally he found a way to support Chinese characters in both TextMobject and TexMobject string.
+
 # Manim
 Animation engine for explanatory math videos.
 
