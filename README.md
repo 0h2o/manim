@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 5.Run the manim engine and enjoy!
 ```
-python extract_scene.py example_scenes.py SquareToCircle -pl
+python extract_scene.py example_scenes.py CNSS_TEST -pl
 ```
 
 **For further details, please refer to the original repo from [3b1b](https://github.com/3b1b/manim).**
