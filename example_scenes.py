@@ -2,6 +2,7 @@
 #coding=utf-8
 
 from big_ol_pile_of_manim_imports import *
+import copy
 
 # To watch one of these scenes, run the following:
 # python extract_scene.py file_name <SceneName> -p
@@ -11,14 +12,56 @@ from big_ol_pile_of_manim_imports import *
 # the final frame, and use -n <number> to skip ahead
 # to the n'th animation of a scene.
 
-
-class SquareToCircle(Scene):
+class DrawGraghTest(Scene):
     def construct(self):
-        cnss = TextMobject("Cohensive Network Security Studio").scale(2)
-        self.play(Write(cnss))
+        circle1 = Circle().scale_to_fit_height(2).scale_to_fit_width(2).move_to(LEFT)
+        self.play(ShowCreation(circle1))
+        t = 0
+        while(t<=2):
+            self.wait(0.01)
+            t += 0.01
+            x = 3*(t**2)+2*t+2
+            circle1.move_to(np.array([x,0,0]))
+
+class CNSS_TEST(Scene):
+    def construct(self):
+        cnss = TextMobject("Cohensive Network Security Studio")
+        cnss2 = TextMobject("C........ N....... S....... S.....").scale(1.5)
+        
+        cnss3 = TextMobject("CNSS").set_color("#80d4ff")
         cnss_chn = TextMobject("凝聚网络安全工作室")
-        self.play(Transform(cnss, cnss_chn))
-        self.play(FadeOut(cnss))
+        
+        self.play(Write(cnss))
+        self.play(Transform(cnss, cnss2))
+        self.play(Transform(cnss,cnss3))
+        self.play(cnss.shift,(np.array([0,0.2,0])),run_time=1)
+    
+        cnss_chn.next_to(cnss,DOWN)
+        
+        self.play(Write(cnss_chn),run_time=0.7)
+        gp = VGroup(cnss,cnss_chn)
+        self.play(gp.shift,(np.array([0,0.2,0])),run_time=0.8)
+        
+        cnss_we_wait_you_here = TextMobject(r"\verb|>|"," 2018"," we"," wait ","U"," here").next_to(gp,DOWN)
+        cnss_we_wait_you_here.set_color(WHITE)
+        cnss_we_wait_you_here.set_color_by_tex(r'\verb|>|',LIGHT_GREY)
+        cnss_we_wait_you_here.set_color_by_tex('U',RED_B)
+        cnss_we_wait_you_here.shift(np.array([-0.5,0,0]))
+        self.play(Write(cnss_we_wait_you_here),run_time=1)
+        
+        dots = VGroup(*[TextMobject(str(k)) for k in ['.','..','...','....','.....','......']])
+        for text in dots:
+            text.next_to(cnss_we_wait_you_here, RIGHT)
+            self.add(text)
+            self.wait(0.5)
+            self.remove(text)
+        gp2 = VGroup(cnss,cnss_chn,cnss_we_wait_you_here)
+        self.play(Transform(gp2,cnss))
+        self.play(gp2.scale,2)
+        self.wait(2)
+        self.play(Transform(gp2,TextMobject('.')))
+        self.play(FadeOut(gp2))
+        self.wait(2)
 
 class WarpSquare(Scene):
     def construct(self):
@@ -28,6 +71,7 @@ class WarpSquare(Scene):
             square
         ))
         self.wait()
+        
 
 
 class WriteStuff(Scene):

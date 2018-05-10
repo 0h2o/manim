@@ -1,3 +1,4 @@
+#coding=utf-8
 from big_ol_pile_of_manim_imports import *
 
 
@@ -148,7 +149,7 @@ class WorkOutNumerically(Scene):
 class LetsGoInOneSentence(TeacherStudentsScene):
     def construct(self):
         self.teacher_says(
-            "Here we go, \\\\", "one sentence!"
+            "Here we go, \\\\", "guguvogigugugi!"
         )
         self.change_all_student_modes("hooray")
         self.teacher_says(
