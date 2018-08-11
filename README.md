@@ -6,7 +6,7 @@ Stupid 0h2o worked for days, finally he found a simple way to support Chinese ch
 2.Install the following packages:
 ```
 sudo apt-get install ffmpeg
-# sudo apt-get install latex (no longer needed)
+#sudo apt-get install latex #(no longer needed)
 sudo apt-get install sox
 ```
 Uninstall this in advance:
