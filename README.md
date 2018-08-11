@@ -25,6 +25,12 @@ You can also skip this procedure, but later on you will come across numerous mis
 pip install -r requirements.txt
 ```
 
+If you meet the `command 'x86_64-linux-gnu-gcc' failed with exit status 1` error, just do the following thing:
+
+```
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+```
+
 5.Run the manim engine and enjoy!
 ```
 python extract_scene.py example_scenes.py CNSS_TEST -pl
