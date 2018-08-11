@@ -1,12 +1,12 @@
 ## Background
 Stupid 0h2o worked for days, finally he found a simple way to support Chinese characters in both **TextMobject** and **TexMobject** string.
 ## Install guide
-1.Prepare a PC/VM running on a linux system(my case kUbuntu).
+1.Prepare a PC/VM running on a linux system(my case Xubuntu).
 
 2.Install the following packages:
 ```
 sudo apt-get install ffmpeg
-sudo apt-get install latex
+# sudo apt-get install latex (no longer needed)
 sudo apt-get install sox
 ```
 Uninstall this in advance:
